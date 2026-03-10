@@ -1,0 +1,10 @@
+# Python venvs
+.venv/
+.venv312/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
