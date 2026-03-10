@@ -1,6 +1,6 @@
 # Telegram Investment news Digest Bot
 
-The goal is to create a simple telegram bot that will collect the latest news from the companies, I'm interested in from the investment perspective and share the digest.
+The goal is to create a simple telegram bot that will collect the latest news from the companies, that might be interested from the investment perspective and share the digest.
 
 A simple Telegram bot built with python-telegram-bot that:
 - Responds to /start and echoes any text
@@ -16,20 +16,34 @@ A simple Telegram bot built with python-telegram-bot that:
    source .venv312/bin/activate
 
 
-## Deploy to PythonAnywhere (manual)
+Deploy to PythonAnywhere (manual)
+---------------------------------
 
 Local (Mac):
+1. Make sure the code works locally with `python echo_bot.py`.
+2. Commit and push changes:
 
-bash
+```bash
 git add .
 git commit -m "Update bot"
 git push
-PythonAnywhere (Bash console)
+```
 
-bash
+PythonAnywhere (Bash console):
+1. Open a Bash console on PythonAnywhere.
+2. Go to your project folder and pull the latest code:
+
+```bash
 cd ~/investbot
 git pull
-python echo_bot.py
-Verify
+```
 
-In Telegram, send /start and /digest to confirm the new version is running.
+3. Run the bot:
+
+```bash
+python echo_bot.py
+```
+
+
+Verification:
+- In Telegram, send `/start` and `/digest` to the bot and confirm it responds.
