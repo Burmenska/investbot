@@ -14,3 +14,22 @@ A simple Telegram bot built with python-telegram-bot that:
    ```bash
    /opt/homebrew/opt/python@3.12/bin/python3.12 -m venv .venv312
    source .venv312/bin/activate
+
+
+## Deploy to PythonAnywhere (manual)
+
+Local (Mac):
+
+bash
+git add .
+git commit -m "Update bot"
+git push
+PythonAnywhere (Bash console)
+
+bash
+cd ~/investbot
+git pull
+python echo_bot.py
+Verify
+
+In Telegram, send /start and /digest to confirm the new version is running.
